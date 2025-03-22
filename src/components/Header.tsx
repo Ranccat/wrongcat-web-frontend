@@ -3,7 +3,7 @@ import useNavigation from '@/hooks/useNavigation'
 import useUserStore from '@/stores/userStore'
 
 const Header = () => {
-  const { goToMain, goToLogin, goToDashboard } = useNavigation()
+  const { goToMain, goToLogin, goToDashboard, goToDownload } = useNavigation()
   const { isLoggedIn } = useUserStore()
 
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         <button className="font-bold">
           Games
         </button>
-        <button className="font-bold">
+        <button className="font-bold" onClick={goToDownload}>
           Download
         </button>
         <button className="ml-6" onClick={isLoggedIn ? goToLogin : goToDashboard}>

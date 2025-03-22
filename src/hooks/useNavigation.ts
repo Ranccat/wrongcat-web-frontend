@@ -8,6 +8,7 @@ const useNavigation = () => {
     goToLogin: () => navigate('/login'),
     goToRegister: () => navigate('/register'),
     goToDashboard: () => navigate('/dashboard'),
+    goToDownload: () => navigate('/download'),
   }
 }
 
