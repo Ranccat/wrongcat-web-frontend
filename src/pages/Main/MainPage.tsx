@@ -1,6 +1,8 @@
+import Overview from '@/pages/Main/Overview'
+
 const MainPage = () => {
   return (
-    <p>Main Page</p>
+    <Overview />
   )
 }
 
